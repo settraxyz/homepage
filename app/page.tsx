@@ -91,7 +91,7 @@ export default function SettraLandingPage() {
       <div className="bg-blue-200/15 -mt-20 pt-20 relative">
         <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
           <motion.div
-            className="absolute -left-50 -top-40 h-[20rem] w-[40rem] rounded-full bg-gradient-to-br from-indigo-200 to-purple-200/60 blur-3xl"
+            className="absolute -left-50 -top-40 h-[20rem] w-[40rem] rounded-full bg-gradient-to-br from-indigo-200/80 to-purple-200/60 blur-3xl"
             animate={{
               scale: [1, 1.1, 1],
               opacity: [0.6, 0.8, 0.6],
