@@ -274,7 +274,7 @@ export default function SettraLandingPage() {
             为什么选择 Settra？
           </h2>
           <p className="mt-3 text-slate-600">
-            十多年支付系统经验。稳定、可靠、高成功率。
+            十多年支付系统经验。安全、稳定、高成功率。
           </p>
         </div>
 
