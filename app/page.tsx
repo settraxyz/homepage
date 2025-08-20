@@ -297,7 +297,7 @@ export default function SettraLandingPage() {
             </motion.div>
             <motion.div
               className="flex flex-col items-start gap-6"
-              initial={{ opacity: 0, x: 20 }}
+              initial={{ opacity: 0, x: 10 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.5 }}
@@ -319,7 +319,7 @@ export default function SettraLandingPage() {
           <div className="md:grid grid-cols-1 md:grid-cols-2 gap-10 items-center flex flex-col-reverse">
             <motion.div
               className="flex flex-col items-start gap-6"
-              initial={{ opacity: 0, x: -20 }}
+              initial={{ opacity: 0, x: -10 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.5 }}
@@ -370,7 +370,7 @@ export default function SettraLandingPage() {
             </motion.div>
             <motion.div
               className="flex flex-col items-start gap-6"
-              initial={{ opacity: 0, x: 20 }}
+              initial={{ opacity: 0, x: 10 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.5 }}
@@ -390,7 +390,7 @@ export default function SettraLandingPage() {
           <div className="md:grid grid-cols-1 md:grid-cols-2 gap-10 items-center flex flex-col-reverse">
             <motion.div
               className="flex flex-col items-start gap-6"
-              initial={{ opacity: 0, x: -20 }}
+              initial={{ opacity: 0, x: -10 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.5 }}
