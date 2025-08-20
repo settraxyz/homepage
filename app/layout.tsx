@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://settra.app"), // 替换为你的实际域名
+  metadataBase: new URL("https://settra.xyz"), // 替换为你的实际域名
   alternates: {
     canonical: "/",
     languages: {
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     description:
       "为支付公司提供高并发、高成功率的跨境支付系统。模块化、可扩展、即插即用。",
     images: ["/twitter-image.jpg"], // 需要创建这个图片
-    creator: "@SettraPayments", // 替换为你的实际Twitter账号
+    creator: "@settra_xyz", // 替换为你的实际Twitter账号
   },
   robots: {
     index: true,
