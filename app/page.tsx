@@ -49,11 +49,6 @@ export default function SettraLandingPage() {
 
   return (
     <div className="min-h-screen bg-white text-slate-900">
-      <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
-        <div className="absolute -left-40 -top-40 h-96 w-96 rounded-full bg-gradient-to-br from-indigo-200 to-purple-200/60 blur-3xl" />
-        <div className="absolute -right-40 top-1/3 h-[28rem] w-[28rem] rounded-full bg-gradient-to-tr from-cyan-200/20 to-emerald-200/10 blur-3xl" />
-      </div>
-
       <header
         className={cn(
           "sticky top-0 z-20 backdrop-blur",
@@ -93,7 +88,39 @@ export default function SettraLandingPage() {
         </div>
       </header>
 
-      <div className="bg-blue-100/30 -mt-20 pt-20">
+      <div className="bg-blue-200/15 -mt-20 pt-20 relative">
+        <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
+          <motion.div
+            className="absolute -left-50 -top-40 h-[20rem] w-[40rem] rounded-full bg-gradient-to-br from-indigo-200 to-purple-200/60 blur-3xl"
+            animate={{
+              scale: [1, 1.1, 1],
+              opacity: [0.6, 0.8, 0.6],
+              rotate: [0, 360],
+              x: [0, 20, -10, 0],
+              y: [0, -32, 20, 0],
+            }}
+            transition={{
+              duration: 20,
+              repeat: Infinity,
+              ease: "linear",
+            }}
+          />
+          <motion.div
+            className="absolute -right-40 top-2/3 h-[20rem] w-[32rem] rounded-full bg-gradient-to-tr from-cyan-300/80 to-emerald-200/30 blur-3xl"
+            animate={{
+              scale: [1, 1.05, 1],
+              opacity: [0.4, 0.7, 0.4],
+              rotate: [360, 0],
+              x: [0, -25, 15, 0],
+              y: [0, 30, -20, 0],
+            }}
+            transition={{
+              duration: 25,
+              repeat: Infinity,
+              ease: "linear",
+            }}
+          />
+        </div>
         <section className="relative container mx-auto px-4 py-24 overflow-hidden items-center flex-col md:flex-row  gap-10 flex justify-between">
           <motion.div
             variants={leftContainerVariants}
