@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# 优化爬虫抓取
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+# 禁止访问的路径（如果有的话）
+# Disallow: /admin/
+# Disallow: /api/
+# Disallow: /private/
+
+# 站点地图
+Sitemap: https://settra.com/sitemap.xml
