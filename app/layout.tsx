@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     siteName: "Settra Payments",
     images: [
       {
-        url: "/og-image.jpg", // 需要创建这个图片
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Settra 跨境支付基础设施",
@@ -75,8 +75,8 @@ export const metadata: Metadata = {
     title: "Settra - 下一代跨境支付基础设施",
     description:
       "为支付公司提供高并发、高成功率的跨境支付系统。模块化、可扩展、即插即用。",
-    images: ["/twitter-image.jpg"], // 需要创建这个图片
-    creator: "@settra_xyz", // 替换为你的实际Twitter账号
+    images: ["/twitter-image.jpg"],
+    creator: "@settra_xyz",
   },
   robots: {
     index: true,

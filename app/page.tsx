@@ -7,6 +7,7 @@ import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import Threads from "@/components/threads";
 
 export default function SettraLandingPage() {
   const [scrolled, setScrolled] = useState(false);
@@ -398,9 +399,9 @@ export default function SettraLandingPage() {
       </section>
       <div
         id="cta"
-        className="p-10 bg-gradient-to-br from-indigo-50 to-indigo-50/50 "
+        className="p-10 bg-gradient-to-br relative from-indigo-50 to-indigo-50/50"
       >
-        <div className="mx-auto container rounded-xl p-8 text-center backdrop-blur">
+        <div className="mx-auto container rounded-xl p-8 text-center relative z-10">
           <h3 className="text-2xl font-semibold">马上开启跨境支付新体验</h3>
           <p className="mx-auto mt-2 max-w-2xl text-slate-700">
             使用
@@ -422,6 +423,9 @@ export default function SettraLandingPage() {
               获取方案与报价
             </Button>
           </div>
+        </div>
+        <div className="absolute inset-0 z-0">
+          <Threads distance={0.5} color={[0, 60, 155]} />
         </div>
       </div>
 
