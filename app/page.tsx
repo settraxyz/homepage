@@ -451,7 +451,7 @@ export default function SettraLandingPage() {
             </Button>
           </div>
         </div>
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 hidden md:block">
           <Threads distance={0.5} color={[0, 60, 155]} />
         </div>
       </div>
