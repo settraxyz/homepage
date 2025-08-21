@@ -7,6 +7,7 @@ import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { CONTACT_URL } from "@/lib/constants";
 import Threads from "@/components/threads";
 
 export default function SettraLandingPage() {
@@ -47,6 +48,10 @@ export default function SettraLandingPage() {
     },
   };
 
+  const onContact = () => {
+    window.open(CONTACT_URL, "_blank");
+  };
+
   return (
     <div className="min-h-screen bg-white text-slate-900">
       <header
@@ -81,7 +86,10 @@ export default function SettraLandingPage() {
             </a>
           </nav>
           <div className="flex items-center gap-3">
-            <Button className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-md">
+            <Button
+              onClick={onContact}
+              className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-md"
+            >
               获取演示
             </Button>
           </div>
@@ -149,6 +157,7 @@ export default function SettraLandingPage() {
             >
               <Button
                 size="lg"
+                onClick={onContact}
                 className="group bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-md"
               >
                 立即咨询{" "}
@@ -157,6 +166,7 @@ export default function SettraLandingPage() {
               <Button
                 size="lg"
                 variant="outline"
+                onClick={onContact}
                 className="border-slate-300 bg-white text-slate-700 hover:bg-slate-50"
               >
                 获取演示
@@ -309,7 +319,10 @@ export default function SettraLandingPage() {
                 借助智能任务调度与异步 I/O 技术，单节点即可轻松支撑 百万级
                 TPS，同时具备横向扩展能力，确保在业务高峰期依旧快速响应。
               </p>
-              <Button className="group bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-md">
+              <Button
+                onClick={onContact}
+                className="group bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-md"
+              >
                 马上了解{" "}
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
               </Button>
@@ -330,7 +343,10 @@ export default function SettraLandingPage() {
                 智能路由与动态重试机制，确保每一笔交易都能找到最佳通道。
                 我们还对收银台进行优化，采用了节点缓存与边缘加速，确保用户无论身处何地、使用何种设备，都能快速加载收银页面并完成支付。即使在高峰时段或极端情况下，系统也能保持极高的成功率。
               </p>
-              <Button className="group bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-md">
+              <Button
+                onClick={onContact}
+                className="group bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-md"
+              >
                 马上了解{" "}
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
               </Button>
@@ -380,7 +396,10 @@ export default function SettraLandingPage() {
                 系统支持全方位实时监控，涵盖交易数据、任务执行日志与设备状态。不仅能即时掌握交易金额、成功率及趋势变化，
                 还能清晰追踪账户操作流程与验证码识别等执行细节，并实时查看设备在线情况与运行环境，确保业务高效可控、问题可快速定位与处理。
               </p>
-              <Button className="group bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-md">
+              <Button
+                onClick={onContact}
+                className="group bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-md"
+              >
                 马上了解{" "}
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
               </Button>
@@ -401,7 +420,10 @@ export default function SettraLandingPage() {
                 从架构层到应用层全方位构建安全体系：多重加密传输、严格的权限控制、实时风控监测与异常告警，确保交易数据和资金流转安全可靠。
                 无论面对账户风控、跨境合规，还是恶意攻击，我们都提供银行级的安全防护标准，让每一笔支付都值得信赖。
               </p>
-              <Button className="group bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-md">
+              <Button
+                onClick={onContact}
+                className="group bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-md"
+              >
                 马上了解{" "}
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
               </Button>
@@ -437,6 +459,7 @@ export default function SettraLandingPage() {
           <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
             <Button
               size="lg"
+              onClick={onContact}
               className="group bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-md"
             >
               立即咨询{" "}
@@ -445,6 +468,7 @@ export default function SettraLandingPage() {
             <Button
               size="lg"
               variant="outline"
+              onClick={onContact}
               className="border-slate-300 bg-white text-slate-700 hover:bg-slate-50"
             >
               获取方案与报价
