@@ -4,23 +4,12 @@ import { Button } from "@/components/ui/button";
 
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
-import { useEffect, useState } from "react";
-import { cn } from "@/lib/utils";
+
 import Image from "next/image";
 import { CONTACT_URL } from "@/lib/constants";
 import Threads from "@/components/threads";
 
 export default function SettraLandingPage() {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => {
-      setScrolled(window.scrollY > 0);
-    };
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   const leftContainerVariants = {
     enter: {
       transition: { staggerChildren: 0.05 },
@@ -54,48 +43,6 @@ export default function SettraLandingPage() {
 
   return (
     <div className="min-h-screen bg-white text-slate-900">
-      <header
-        className={cn(
-          "sticky top-0 z-20 backdrop-blur",
-          scrolled ? "bg-white/50" : "bg-transparent"
-        )}
-      >
-        <div className="container mx-auto flex items-center justify-between px-4 h-20">
-          <div className="flex items-center gap-4">
-            <Image
-              src="/logo.png"
-              width={256}
-              height={256}
-              alt="Settra Logo"
-              className="size-10"
-            />
-            <span className="text-xl font-bold tracking-tight">Settra</span>
-          </div>
-          <nav className="hidden items-center gap-10 md:flex font-semibold">
-            <a
-              href="#features"
-              className=" text-slate-600 hover:text-slate-900"
-            >
-              产品
-            </a>
-            <a href="#cases" className=" text-slate-600 hover:text-slate-900">
-              客户案例
-            </a>
-            <a href="#cta" className=" text-slate-600 hover:text-slate-900">
-              联系我们
-            </a>
-          </nav>
-          <div className="flex items-center gap-3">
-            <Button
-              onClick={onContact}
-              className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-md"
-            >
-              获取演示
-            </Button>
-          </div>
-        </div>
-      </header>
-
       <div className="bg-blue-200/10 -mt-20 pt-20 relative">
         <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
           <motion.div
@@ -479,34 +426,6 @@ export default function SettraLandingPage() {
           <Threads distance={0.5} color={[0, 60, 155]} />
         </div>
       </div>
-
-      <footer className="py-10 text-sm text-slate-500 mt-12">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col justify-between gap-6 md:flex-row md:items-center">
-            <div className="flex items-center gap-2">
-              <Image
-                src="/logo.png"
-                width={256}
-                height={256}
-                alt="Settra Logo"
-                className="size-6"
-              />
-              <span className="font-medium text-slate-700">Settra</span>
-              <span className="ml-2">
-                © 2025 Settra Payments. All rights reserved.
-              </span>
-            </div>
-            <div className="flex items-center gap-5">
-              <a className="hover:text-slate-700" href="#">
-                服务条款
-              </a>
-              <a className="hover:text-slate-700" href="#">
-                联系支持
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
