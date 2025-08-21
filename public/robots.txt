@@ -20,4 +20,4 @@ Crawl-delay: 2
 # Disallow: /private/
 
 # 站点地图
-Sitemap: https://settra.com/sitemap.xml
+Sitemap: https://settra.xyz/sitemap.xml

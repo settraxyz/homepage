@@ -393,6 +393,7 @@ export default function SettraLandingPage() {
           </div>
         </div>
       </section>
+
       <div
         id="cta"
         className="p-10 bg-gradient-to-br relative from-indigo-50 to-indigo-50/50"
