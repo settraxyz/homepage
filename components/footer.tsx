@@ -21,6 +21,9 @@ export default function Footer() {
             </span>
           </div>
           <div className="flex items-center gap-5">
+            <Link className="hover:text-slate-700" href="/india-payment-system">
+              印度支付系统出租
+            </Link>
             <Link className="hover:text-slate-700" href="/privacy">
               隐私策略
             </Link>
