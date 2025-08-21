@@ -24,9 +24,11 @@ export const metadata: Metadata = {
   keywords: [
     "印度支付",
     "巴西支付",
-    "UPI 支付",
+    "UPI支付",
+    "印度UPI支付",
     "支付系统",
     "印度支付系统",
+    "UPI支付系统",
     "跨境支付",
     "跨境支付系统",
     "India Payment",
