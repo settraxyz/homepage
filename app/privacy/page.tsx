@@ -65,7 +65,7 @@ export default function PrivacyPage() {
           </h1>
         </div>
 
-        <Card className="shadow-md border-none">
+        <Card className="shadow-none">
           <CardHeader className="space-y-1">
             <CardTitle className="flex items-center gap-2 text-xl">
               我们如何看待您的隐私

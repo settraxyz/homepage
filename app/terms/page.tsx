@@ -66,7 +66,7 @@ export default function TermsPage() {
           </h1>
         </div>
 
-        <Card className="shadow-md border-none">
+        <Card className="shadow-none">
           <CardHeader className="space-y-1">
             <CardTitle className="flex items-center gap-2 text-xl">
               阅读本条款前请先了解

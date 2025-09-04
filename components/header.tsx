@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { CONTACT_URL } from "@/lib/constants";
+
 import Link from "next/link";
 
 export default function Header() {
@@ -35,7 +35,10 @@ export default function Header() {
           <span className="text-xl font-bold tracking-tight">Settra</span>
         </Link>
         <nav className="hidden items-center gap-10 md:flex font-semibold">
-          <Link href="/#features" className=" text-slate-600 hover:text-slate-900">
+          <Link
+            href="/#features"
+            className=" text-slate-600 hover:text-slate-900"
+          >
             产品
           </Link>
           <Link href="/#cases" className=" text-slate-600 hover:text-slate-900">
@@ -46,9 +49,9 @@ export default function Header() {
           </Link>
         </nav>
         <div className="flex items-center gap-3">
-          <Link href={CONTACT_URL} target="_blank">
+          <Link href="/demo">
             <Button className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-md">
-              获取演示
+              演示后台
             </Button>
           </Link>
         </div>

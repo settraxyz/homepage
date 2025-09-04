@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 
+import Link from "next/link";
 import Image from "next/image";
 import { CONTACT_URL } from "@/lib/constants";
 import Threads from "@/components/threads";
@@ -110,14 +111,15 @@ export default function SettraLandingPage() {
                 立即咨询{" "}
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                onClick={onContact}
-                className="border-slate-300 bg-white text-slate-700 hover:bg-slate-50"
-              >
-                获取演示
-              </Button>
+              <Link href="/demo">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-slate-300 bg-white text-slate-700 hover:bg-slate-50"
+                >
+                  演示后台
+                </Button>
+              </Link>
             </motion.div>
             <motion.p
               variants={leftChildVariants}
@@ -410,17 +412,18 @@ export default function SettraLandingPage() {
               onClick={onContact}
               className="group bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-md"
             >
-              立即咨询{" "}
+              获取方案与报价{" "}
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              onClick={onContact}
-              className="border-slate-300 bg-white text-slate-700 hover:bg-slate-50"
-            >
-              获取方案与报价
-            </Button>
+            <Link href="/demo">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-slate-300 bg-white text-slate-700 hover:bg-slate-50"
+              >
+                演示后台
+              </Button>
+            </Link>
           </div>
         </div>
         <div className="absolute inset-0 z-0 hidden md:block">

@@ -74,7 +74,7 @@ const Feature = ({
   title: string;
   desc: string;
 }) => (
-  <Card className="h-full">
+  <Card className="h-full shadow-none">
     <CardHeader className="space-y-2">
       <CardTitle className="flex items-center gap-2 text-base">
         <Icon className="h-5 w-5" />
@@ -171,7 +171,7 @@ export default function IndiaPaymentSystemPage() {
       <section id="features" className="space-y-4">
         <h2 className="text-2xl font-semibold">能力清单</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <Card>
+          <Card className="shadow-none">
             <CardHeader>
               <CardTitle className="text-base flex items-center gap-2">
                 <WalletMinimal className="h-5 w-5" />
@@ -193,7 +193,7 @@ export default function IndiaPaymentSystemPage() {
               </p>
             </CardContent>
           </Card>
-          <Card>
+          <Card className="shadow-none">
             <CardHeader>
               <CardTitle className="text-base flex items-center gap-2">
                 <Lock className="h-5 w-5" />
@@ -215,7 +215,7 @@ export default function IndiaPaymentSystemPage() {
               </p>
             </CardContent>
           </Card>
-          <Card>
+          <Card className="shadow-none">
             <CardHeader>
               <CardTitle className="text-base flex items-center gap-2">
                 <Cpu className="h-5 w-5" />
@@ -237,7 +237,7 @@ export default function IndiaPaymentSystemPage() {
               </p>
             </CardContent>
           </Card>
-          <Card>
+          <Card className="shadow-none">
             <CardHeader>
               <CardTitle className="text-base flex items-center gap-2">
                 <Building2 className="h-5 w-5" />
@@ -306,7 +306,7 @@ export default function IndiaPaymentSystemPage() {
       <section id="faq" className="space-y-4">
         <h2 className="text-2xl font-semibold">常见问题（FAQ）</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <Card>
+          <Card className="shadow-none">
             <CardHeader>
               <CardTitle className="text-base">
                 交付方式是出租还是买断？
@@ -317,7 +317,7 @@ export default function IndiaPaymentSystemPage() {
               出租，亦可按需提供私有化部署与源码交付（需合规审核与额外协议）。
             </CardContent>
           </Card>
-          <Card>
+          <Card className="shadow-none">
             <CardHeader>
               <CardTitle className="text-base">接入周期多久？</CardTitle>
             </CardHeader>
@@ -325,7 +325,7 @@ export default function IndiaPaymentSystemPage() {
               标准集成通常 1-3 天可上线（取决于银行/通道开户与合规材料进度）。
             </CardContent>
           </Card>
-          <Card>
+          <Card className="shadow-none">
             <CardHeader>
               <CardTitle className="text-base">系统支持哪些银行/PG？</CardTitle>
             </CardHeader>
@@ -333,7 +333,7 @@ export default function IndiaPaymentSystemPage() {
               按需适配主流银行与支付网关，支持多通道并行与策略路由，详情联系顾问获取清单。
             </CardContent>
           </Card>
-          <Card>
+          <Card className="shadow-none">
             <CardHeader>
               <CardTitle className="text-base">如何保证成功率？</CardTitle>
             </CardHeader>
