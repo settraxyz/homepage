@@ -36,7 +36,7 @@ export default function DemoPage() {
           产品演示入口
         </h1>
         <p className="mt-3 text-slate-600">
-          请选择要体验的后台类型，可在后台商户测试下单，体验收银台
+          请选择要体验的后台类类型，收银台可在后台商户测试下单体验。
         </p>
       </div>
 
