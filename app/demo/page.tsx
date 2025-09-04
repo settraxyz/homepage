@@ -35,7 +35,9 @@ export default function DemoPage() {
         <h1 className="text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
           产品演示入口
         </h1>
-        <p className="mt-3 text-slate-600">请选择要体验的后台类型</p>
+        <p className="mt-3 text-slate-600">
+          请选择要体验的后台类型，可在后台商户测试下单，体验收银台
+        </p>
       </div>
 
       <div className="mt-10 grid grid-cols-1 gap-6 md:mt-14 md:grid-cols-3">
