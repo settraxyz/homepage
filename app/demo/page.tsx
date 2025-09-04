@@ -9,19 +9,19 @@ export const metadata: Metadata = {
 
 const cards = [
   {
-    title: "三方系统后台",
+    title: "演示三方系统后台",
     desc: "账号: demo \n 密码: demo123456",
     href: `https://demo-xadmin.settra.xyz`,
     cta: "进入后台",
   },
   {
-    title: "四方系统后台",
+    title: "演示四方系统后台",
     desc: "账号：demo \n 密码: 12345678",
     href: `https://demo-admin.settra.xyz`,
     cta: "进入后台",
   },
   {
-    title: "商户后台",
+    title: "演示商户后台",
     desc: "账号：demo \n 密码: 12345678",
     href: `https://demo-merchant.settra.xyz`,
     cta: "进入后台",
