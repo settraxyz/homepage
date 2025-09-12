@@ -14,12 +14,12 @@ const cards = [
     href: `https://demo-xadmin.settra.xyz`,
     cta: "进入后台",
   },
-  {
-    title: "演示四方系统后台",
-    desc: "账号：demo \n 密码: 12345678",
-    href: `https://demo-admin.settra.xyz`,
-    cta: "进入后台",
-  },
+  // {
+  //   title: "演示四方系统后台",
+  //   desc: "账号：demo \n 密码: 12345678",
+  //   href: `https://demo-admin.settra.xyz`,
+  //   cta: "进入后台",
+  // },
   {
     title: "演示商户后台",
     desc: "账号：demo \n 密码: 12345678",
