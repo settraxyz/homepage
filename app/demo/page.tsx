@@ -40,7 +40,7 @@ export default function DemoPage() {
         </p>
       </div>
 
-      <div className="mt-10 grid grid-cols-1 gap-6 md:mt-14 md:grid-cols-3">
+      <div className="mt-10 grid grid-cols-1 gap-6 md:mt-14 md:grid-cols-2">
         {cards.map((card) => (
           <div
             key={card.title}
